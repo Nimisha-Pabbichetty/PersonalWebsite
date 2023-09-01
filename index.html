@@ -449,7 +449,7 @@
               <ul class="clients-list has-scrollbar">
                   <li class="clients-item">
                     <a href="#">
-                        <img src="./assets/images/siemens.png" alt="Siemens logo">
+                        <img src="./assets/images/siemens.jpg" alt="Siemens logo">
                     </a>
                   </li>
                   <li class="clients-item">
@@ -518,7 +518,7 @@
               <p class="timeline-text">
                 Master of Science in Electrical and Computer Engineering.
                   <br/>
-                Coursework: Human - Robot Interaction, Medical Image Processing, PDEs in Image Processing and Computer Vision, Advanced Programming Techniques, Statistical Machine Learning, Linear Systems and Controls.
+                Coursework: Generative and Geometric Deep Learning, Human - Robot Interaction, Medical Image Processing, PDEs in Image Processing and Computer Vision, Advanced Programming Techniques, Statistical Machine Learning, Linear Systems and Controls.
               </p>
 
             </li>
@@ -551,15 +551,27 @@
           </div>
 
           <ol class="timeline-list">
+              <li class="timeline-item">
 
+                  <h4 class="h4 timeline-item-title">Advanced AI and Robotics Intern</h4>
+
+                  <span>May 2023 — Present</span>
+
+                  <p class="timeline-text">
+                    As part of the Advanced Manufaturing and Automation group, I worked on the next generation of the Simatic Robot Pick AI - a pick point estimation solution for manipulators to facilitate industrial automation.
+                    During the summer, I conducted an extensive literature survey to study the state of the art in object detection and instance segmentation models. Next, I trained and tested several instance segmentation models using PyTorch, ONNX and OpenVino.
+                    Additionally, I designed a custom segmentation metric to better evaluate the quality of the predicted segmentation masks. 
+                  </p>
+
+              </li>
               <li class="timeline-item">
 
                   <h4 class="h4 timeline-item-title">Graduate Student Researcher</h4>
 
-                  <span>Jan 2023 — Present</span>
+                  <span>Jan 2023 — April 2023</span>
 
                   <p class="timeline-text">
-                      As part of the Robotics and Intelligent Construction Automation Lab (run by Dr. Yong K. Cho), I'm working on a warning system for construction workers that alerts them when Vehicles are approaching. Currently, I'm working on Vehicle Proximity Detection.
+                      As part of the Robotics and Intelligent Construction Automation Lab (run by Dr. Yong K. Cho), I'm working on a warning system for construction workers that alerts them when Vehicles are approaching. I set up a vehicle detection pipeline for detecting cars approaching a construction site. The pipeline consisted of EfficientDet for detecting the vehicles, SORT for tracking and RESA based lane detection and also included rudimentary monocular depth and velocity estimation.
                   </p>
 
               </li>
@@ -919,36 +931,185 @@
         </header>
 
         <section class="blog-posts">
-
           <ul class="blog-posts-list">
 
               <li class="blog-post-item">
-                  <a href="https://github.com/Nimisha-Pabbichetty/IndianArtGeneration" class="project-link" target="_blank">
+                  <a href="#">
 
 
                   <figure class="blog-banner-box">
-                      <img src="./assets/images/gan.png" alt="Generative Adverserial Networks" loading="lazy">
+                      <img src="./assets/images/ecocar.png" alt="EcoCAR" loading="lazy">
                   </figure>
 
                   <div class="blog-content">
 
                       <div class="blog-meta">
-                          <p class="blog-category">Deep Learning</p>
+                          <p class="blog-category">Perception</p>
 
                           <span class="dot"></span>
 
-                          <time datetime="2022-02-23"> Nov 2022 - Dec 2022</time>
+                          <time datetime="2022-02-23"> Aug 2023 - Present</time>
                       </div>
 
-                      <h3 class="h3 blog-item-title">Generation of Indian Art using Generative Adverserial Networks</h3>
+                      <h3 class="h3 blog-item-title">EcoCAR EV Challenge</h3>
 
                       <p class="blog-text">
-                          • Collected, curated and augmented a dataset of 4,771 images belonging to 8 different styles of art.
-                          <br />
-                          • Trained 4 different GANs - DCGAN, LSGAN, GANGogh and CycleGAN and compared their ability to generate art.
+                          • Development of the perception system which consists of an IMM filter and a JPDA point-target tracker in simulation using MATLAB's Driving Scenario Designer. <br />
+                          • Integration of the perception system with the in-vehicle computer.
                       </p>
 
                   </div>
+
+                  </a>
+              </li>
+
+              <li class="blog-post-item">
+                  <a href="https://github.com/Nimisha-Pabbichetty/ImageDenoising" class="project-link" target="_blank">
+
+
+                    <figure class="blog-banner-box">
+                        <img src="./assets/images/tv_denoised.png" alt="Denoising" loading="lazy">
+                    </figure>
+
+                    <div class="blog-content">
+
+                        <div class="blog-meta">
+                            <p class="blog-category">Image Processing</p>
+
+                            <span class="dot"></span>
+
+                            <time datetime="2022-02-23"> Mar 2023 - Apr 2023</time>
+                        </div>
+
+                        <h3 class="h3 blog-item-title">Image Denoising using Various Partial Differential Equations</h3>
+
+                        <p class="blog-text">
+                            • Analytically derived the CFL condition for the linear heat equation and total variation PDEs using the Calculus of Variations method. <br />
+                            • Implemented the denoising with different epsilon values using MATLAB and measured 3 different metrics - PSNR, MSE and SSIM.
+                        </p>
+
+                    </div>
+
+                  </a>
+              </li>
+              <li class="blog-post-item">
+                    <a href="#" class="project-link" target="_blank">
+
+
+                      <figure class="blog-banner-box">
+                          <img src="./assets/images/sonar.jpeg" alt="Aquabots" loading="lazy">
+                      </figure>
+
+                      <div class="blog-content">
+
+                          <div class="blog-meta">
+                              <p class="blog-category">Robotics</p>
+
+                              <span class="dot"></span>
+
+                              <time datetime="2022-02-23"> Feb 2023 - Apr 2023</time>
+                          </div>
+
+                          <h3 class="h3 blog-item-title">Aquabots</h3>
+
+                          <p class="blog-text">
+                              • Conducted a literature survey about computer vision applications in Marine Robotics. <br />
+                              • Converted a ROS package of the BlueView SDK to ROS2 to be able to read the data from the BlueView P900.
+                          </p>
+
+                      </div>
+
+                    </a>
+                </li>
+                <li class="blog-post-item">
+                    <a href="https://github.com/iamshan794/K-Space-Transformers" class="project-link" target="_blank">
+
+
+                      <figure class="blog-banner-box">
+                          <img src="./assets/images/brain.png" alt="FastMRI" loading="lazy">
+                      </figure>
+
+                      <div class="blog-content">
+
+                          <div class="blog-meta">
+                              <p class="blog-category">Deep Learning</p>
+
+                              <span class="dot"></span>
+
+                              <time datetime="2022-02-23"> Jan 2023 - Apr 2023</time>
+                          </div>
+
+                          <h3 class="h3 blog-item-title">MRI image reconstruction using Transformers</h3>
+
+                          <p class="blog-text">
+                              • Investigated the use of deep learning and transformer to reconstruct MRIs. <br />
+                              • Proposed a novel dual domain K-Space Transformer that uses both frequency and spatial domain information to improve the quality of reconstruction.
+                          </p>
+
+                      </div>
+
+                    </a>
+                </li>
+
+                <li class="blog-post-item">
+                  <a href="https://github.com/RezaTorbati/HRI_UserStudy" class="project-link" target="_blank">
+
+
+                    <figure class="blog-banner-box">
+                        <img src="./assets/images/vector.jpg" alt="HRI" loading="lazy">
+                    </figure>
+
+                    <div class="blog-content">
+
+                        <div class="blog-meta">
+                            <p class="blog-category">Robotics</p>
+
+                            <span class="dot"></span>
+
+                            <time datetime="2022-02-23"> Mar 2023 - Apr 2023</time>
+                        </div>
+
+                        <h3 class="h3 blog-item-title">Investigating the Effect of Prior Success on Trust in
+                          Robots</h3>
+
+                        <p class="blog-text">
+                            • Designed and conducted a user study with 25 participants to test our hypotheses. <br />
+                            • Conducted statistical tests and analyses such as the One way ANOVA and the pairwise Tukey Test on our results to determine statistical significance.
+                        </p>
+
+                    </div>
+
+                  </a>
+              </li>
+
+
+              <li class="blog-post-item">
+                  <a href="https://github.com/Nimisha-Pabbichetty/IndianArtGeneration" class="project-link" target="_blank">
+
+
+                    <figure class="blog-banner-box">
+                        <img src="./assets/images/gan.png" alt="Generative Adverserial Networks" loading="lazy">
+                    </figure>
+
+                    <div class="blog-content">
+
+                        <div class="blog-meta">
+                            <p class="blog-category">Deep Learning</p>
+
+                            <span class="dot"></span>
+
+                            <time datetime="2022-02-23"> Nov 2022 - Dec 2022</time>
+                        </div>
+
+                        <h3 class="h3 blog-item-title">Generation of Indian Art using Generative Adverserial Networks</h3>
+
+                        <p class="blog-text">
+                            • Collected, curated and augmented a dataset of 4,771 images belonging to 8 different styles of art.
+                            <br />
+                            • Trained 4 different GANs - DCGAN, LSGAN, GANGogh and CycleGAN and compared their ability to generate art.
+                        </p>
+
+                    </div>
 
                   </a>
               </li>
