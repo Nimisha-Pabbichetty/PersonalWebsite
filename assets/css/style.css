@@ -882,6 +882,15 @@ main {
   margin-bottom: 25px;
 }
 
+.about-text.active {
+  display: block;
+  animation: scaleUp 0.25s ease forwards;
+}
+
+.about-text.inactive {
+ display: none;
+}
+
 .filter-select {
   background: var(--eerie-black-2);
   color: var(--light-gray);
@@ -1602,6 +1611,15 @@ textarea.form-input::-webkit-resizer { display: none; }
   .article-title { padding-bottom: 20px; }
 
   .filter-select-box { display: none; }
+
+  .about-text.active {
+    display: block;
+    animation: scaleUp 0.25s ease forwards;
+  }
+
+  .about-text.inactive {
+    display: none;
+  }
 
   .filter-list {
     display: flex;
