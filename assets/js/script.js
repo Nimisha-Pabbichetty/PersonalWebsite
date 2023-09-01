@@ -123,7 +123,7 @@ const formBtn = document.querySelector("[data-form-btn]");
 // add event to all form input field
 for (let i = 0; i < formInputs.length; i++) {
   formInputs[i].addEventListener("input", function () {
-
+  
     // check form validation
     if (form.checkValidity()) {
       formBtn.removeAttribute("disabled");
@@ -134,7 +134,19 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }
 
+formBtn.addEventListener("click",function () {
+  var emailSubject = formInputs[0].value+" - "+formInputs[1].value;
+  var emailBody = formInputs[2].value;
+  var emailAddress = "npabbichetty3@gatech.edu";
 
+  // Construct the mailto URL
+  var mailtoUrl = "mailto:" + emailAddress +
+      "?subject=" + encodeURIComponent(emailSubject) +
+      "&body=" + encodeURIComponent(emailBody);
+
+  // Open the default email client
+  window.location.href = mailtoUrl;
+});
 
 // page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
