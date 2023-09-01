@@ -82,12 +82,12 @@ const filterFunc = function (selectedValue) {
 
   for (let i = 0; i < filterItems.length; i++) {
 
-    if (selectedValue === "all") {
-      filterItems[i].classList.add("active");
-    } else if (selectedValue === filterItems[i].dataset.category) {
+    if (selectedValue === filterItems[i].dataset.category) {
+      filterItems[i].classList.remove("inactive");
       filterItems[i].classList.add("active");
     } else {
       filterItems[i].classList.remove("active");
+      filterItems[i].classList.add("inactive");
     }
 
   }
@@ -123,7 +123,7 @@ const formBtn = document.querySelector("[data-form-btn]");
 // add event to all form input field
 for (let i = 0; i < formInputs.length; i++) {
   formInputs[i].addEventListener("input", function () {
-
+  
     // check form validation
     if (form.checkValidity()) {
       formBtn.removeAttribute("disabled");
@@ -134,7 +134,19 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }
 
+formBtn.addEventListener("click",function () {
+  var emailSubject = formInputs[0].value+" - "+formInputs[1].value;
+  var emailBody = formInputs[2].value;
+  var emailAddress = "npabbichetty3@gatech.edu";
 
+  // Construct the mailto URL
+  var mailtoUrl = "mailto:" + emailAddress +
+      "?subject=" + encodeURIComponent(emailSubject) +
+      "&body=" + encodeURIComponent(emailBody);
+
+  // Open the default email client
+  window.location.href = mailtoUrl;
+});
 
 // page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
